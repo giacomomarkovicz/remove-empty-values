@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "4abdd737-9611-4ea4-832a-a632cbf5f193",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15635622",
+		"_collection_link": "https://universal-capsule-984916.postman.co/workspace/remove-empty-values~03c775fa-226c-4e94-927c-8c23a4f17b13/collection/15635622-4abdd737-9611-4ea4-832a-a632cbf5f193?action=share&source=collection_link&creator=15635622"
+	},
+	"item": [
+		{
+			"name": "Format Payload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"A\",\r\n    \"idade\": 26,\r\n    \"stringVazia\": \"\",\r\n    \"stringInvalida\": \"#\",\r\n    \"null\": null,\r\n    \"array\": [\"\", \"string\", 1, 2, null, \"#\"],\r\n    \"objeto\": {\r\n        \"nome:\": \"nome\",\r\n        \"stringVazia\": \"\",\r\n        \"null\": null,\r\n        \"idade\": 26\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/users/format-payload",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"format-payload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
