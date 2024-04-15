@@ -9,3 +9,6 @@ Para inicializar a API:
   - Inicialize a API com `npm start`
 
 Para rodar os testes unitários: `npm test`
+
+Se necessário, o projeto conta com a collection utilizada para testar a requisição, feita pelo Postman.
+Está na pasta `src/collection/`
