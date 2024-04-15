@@ -22,10 +22,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/users/format-payload",
+					"raw": "http://localhost:3000/users/format-payload",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"localhost"
 					],
+					"port": "3000",
 					"path": [
 						"users",
 						"format-payload"
